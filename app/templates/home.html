@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Welcome to the Basecamp LP home page!</h1>
+<p>Please look through the detailed pages about each team</p>
+<ul>
+{% for team in teams  %}
+<li><a href="{% url "team" team %}">{{team}}</a></li>
+{% endfor %}
+</ul>
+{% endblock content %}

@@ -1,0 +1,16 @@
+{% extends 'home.html' %}
+{% block content %}
+{% for name, info in LP.items %}
+{% if name == team %}
+<h1>{{info.title}} Team</h1>
+<br>
+<p>{{info.desc}}</p>
+<h3>Members:</h3>
+<ul>
+    {% for member in info.members %}
+        <li>{{member}}</li>
+    {% endfor %}
+</ul>
+{% endif %} 
+{% endfor %}
+{% endblock content %}

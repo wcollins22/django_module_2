@@ -1,0 +1,17 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: cornsilk;
+}
+
+body {
+    background-color: cornsilk;
+}
+
+a {
+    font-family: timesnewroman;
+    font-size: 20px;
+    text-decoration: none;
+}
